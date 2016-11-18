@@ -31,5 +31,12 @@ public class SmsServiceRemoteImpl implements SmsServiceRemote{
     public boolean sendSMSVerfiCode(String functionNo, String mobile, String verificationCode, String statSnTplCode, String siteId, String userIP) {
         return true;
     }
+    
+    public boolean sendSMSGracefully(String functionNo, String mobile, String statSnTplCode, String perfectContent, String siteId, String userIP, String[] args) {
+        return true;
+    }
 
+    public String getVersion() {
+        return "1.0";
+    }
 }
